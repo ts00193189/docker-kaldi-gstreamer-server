@@ -47,6 +47,7 @@ RUN wget http://www.digip.org/jansson/releases/jansson-2.7.tar.bz2 && \
 
 RUN git clone https://github.com/kaldi-asr/kaldi && \
     cd /opt/kaldi/tools && \
+    ./extras/install_mkl.sh && \
     make && \
     ./install_portaudio.sh && \
     cd /opt/kaldi/src && ./configure --shared && \
