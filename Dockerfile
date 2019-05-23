@@ -1,4 +1,4 @@
-FROM debian:8
+FROM ubuntu:16.04
 MAINTAINER Eduardo Silva <zedudu@gmail.com>
 
 RUN apt-get update && apt-get install -y  \
